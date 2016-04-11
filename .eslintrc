@@ -1,0 +1,11 @@
+{
+  "env": {
+    "node": true
+  },
+  "parser": "espree",
+  "extends": "sanity",
+  "rules": {
+    "max-params": 0,
+    "strict": 0
+  }
+}

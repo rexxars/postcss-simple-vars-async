@@ -1,0 +1,31 @@
+{
+  "name": "postcss-simple-vars-async",
+  "version": "1.2.0",
+  "description": "Alternative version of postcss-simple-vars that supports asynchronous loading of variables",
+  "keywords": [
+    "postcss",
+    "css",
+    "postcss-plugin",
+    "sass",
+    "variables",
+    "vars",
+    "async"
+  ],
+  "author": "Espen Hovlandsdal <espen@hovlandsdal.com>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/rexxars/postcss-simple-vars-async.git"
+  },
+  "dependencies": {
+    "postcss": "^5.0.19"
+  },
+  "devDependencies": {
+    "ava": "^0.13.0",
+    "eslint": "^2.5.3",
+    "eslint-config-sanity": "^1.0.7"
+  },
+  "scripts": {
+    "test": "ava && eslint *.js"
+  }
+}
