@@ -60,7 +60,7 @@ const atruleParams = function (variables, node, opts, result) {
   node.params = bothSyntaxes(variables, node, node.params, opts, result)
 }
 
-module.exports = postcss.plugin('postcss-simple-vars', options => {
+module.exports = postcss.plugin('postcss-simple-vars-async', options => {
   const opts = typeof options === 'undefined' ? {} : options
 
   if (!opts.unknown) {

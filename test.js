@@ -67,7 +67,7 @@ test('overrides variables', t =>
 test('throws an error on unknown variable', t =>
   t.throws(
     run(t, 'a{ width: -$size }'),
-    'postcss-simple-vars: <css input>:1:4: Undefined variable $size')
+    'postcss-simple-vars-async: <css input>:1:4: Undefined variable $size')
 )
 
 test('allows to silent errors', t =>
@@ -138,13 +138,16 @@ test('allows variables function returning a promise', t => {
   })
 })
 
-test('allows variables function returning a promise', t => {
-  return run(t, 'a{width:$five}', 'a{width:5px}', {
+test('has callback for exporting variables that gets called when promise resolves', t =>
+  run(t, 'a{width:$five}', 'a{width:5px}', {
     variables: () => new Promise(resolve => {
       setImmediate(resolve, {five: '5px'})
-    })
+    }),
+    onVariables: variables => {
+      t.same(variables.five, '5px')
+    }
   })
-})
+)
 
 test('throws an error if variables function returns promise that rejects', t =>
   t.throws(

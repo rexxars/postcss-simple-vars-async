@@ -18,7 +18,7 @@
     "url": "https://github.com/rexxars/postcss-simple-vars-async.git"
   },
   "dependencies": {
-    "postcss": "^5.0.19"
+    "postcss": "^5.0.21"
   },
   "devDependencies": {
     "ava": "^0.13.0",
