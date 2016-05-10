@@ -1,6 +1,6 @@
 {
   "name": "postcss-simple-vars-async",
-  "version": "1.2.0",
+  "version": "1.2.1",
   "description": "Alternative version of postcss-simple-vars that supports asynchronous loading of variables",
   "keywords": [
     "postcss",
