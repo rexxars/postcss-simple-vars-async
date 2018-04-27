@@ -1,5 +1,11 @@
 # postcss-simple-vars-async
 
+## NOT MAINTAINED ANYMORE
+
+**If you want to take over as the maintainer of this package, let me know.**
+
+---
+
 PostCSS plugin for Sass-like variables - alternative version of [postcss-simple-vars](https://github.com/postcss/postcss-simple-vars) that supports asynchronous loading of variables
 
 You can use variables inside values, selectors and at-rule’s parameters.
